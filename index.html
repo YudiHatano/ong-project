@@ -7,6 +7,10 @@
 
     <!-- CSS link -->
     <link rel="stylesheet" href="css/style.css">
+
+    <!-- Font link -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+
     <title>EduK</title>
 </head>
 <body>
@@ -20,7 +24,7 @@
             <!-- Nav definition -->
             <nav id="nav">
                 <a href="">HOME</a>
-                <a href="">QUEM SOMOS</a
+                <a href="">QUEM SOMOS</a>
                 <a href="">FOTOS</a>
                 <a href="">CONTATO</a>
             </nav>
@@ -44,7 +48,7 @@
         <h1>Quem somos</h1>
 
         <div id="qs-container">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum nihil ipsum, excepturi quam quod velit itaque qui possimus dolor ullam voluptate animi perferendis? Obcaecati nobis quasi distinctio est eaque quo!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum nihil ipsum, excepturi quam quod velit itaque qui possimus dolor ullam voluptate animi perferendis? Obcaecati nobis quasi distinctio.</p>
         </div>
     </section>
 
@@ -61,9 +65,21 @@
 
     <!-- Footer with social networks and form to contact -->
     <footer>
-        <a href="">Facebook</a>
-        <a href="">Instagram</a>
-        <a href="">Kickstarter</a>
+        <div id="social-container">
+            <a class="social" href="">Facebook</a>
+            <a class="social" href="">Instagram</a>
+            <a class="social" href="">Kickstarter</a>
+        </div>
+
+        <form id="form" action="" method="POST">
+            Nome:
+            <input type="text" name="nome">
+
+            Email:
+            <input type="text">
+
+            <Textarea rows="5" cols="20"></Textarea>
+        </form>
     </footer>
 </body>
 </html>
