@@ -13,6 +13,12 @@ header {
     background-color: #E6E6E6;
 }
 
+header h2 {
+    font-family: sans-serif;
+    font-size: 30pt;
+    color: #65B891;
+}
+
 /* Style div div-nav */
 #div-nav {
     width: 100%;
@@ -21,11 +27,11 @@ header {
 
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 #div-nav h1 {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Work Sans', sans-serif;
     font-size: 24pt;
     color: #3D3D3D;
 }
@@ -43,6 +49,7 @@ header {
     align-items: center;
     width: 40px;
     height: 40px;
+    margin-left: 30vw;
 }
 
 .menu-icon {
@@ -68,7 +75,7 @@ header {
 }
 
 #search-input {
-    width: 80%;
+    width: 70%;
     height: 5vh;
     border: none;
 }
@@ -113,10 +120,13 @@ header {
 
 #qs-container p {
     color: #000000;
-    text-align: center;
+    font-family: 'Open Sans';
+    text-align: justify;
 }
 
-
+span {
+    font-weight: bold;
+}
 
 /* Style section projetos */
 #fotos {
@@ -143,22 +153,36 @@ header {
 .foto {
     width: 100%;
     height: 40vh;
-    background-color: #ffffff;
-    margin-bottom: 0.5%;
-
-    /* Lembrar de retirar o display - temporário enquanto nao tem imagem */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
 }
 
+#foto1 {
+    background-image: url("../images/professor-criancas");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
 
+#foto2 {
+    background-image: url("../images/crianca-mae");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#foto3 {
+    background-image: url("../images/crianca-desenho");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#foto4 {
+    background-image: url("../images/criancas-brincando");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
 
 footer {
     width: 100%;
     height: 50vh;
-    background-color: #3B76B4;
+    background-color: #E6E6E6;
 
     display: flex;
     flex-direction: column;
@@ -177,13 +201,28 @@ footer {
 }
 
 #social-container a {
-    width: 10vw;
-    height: 5vh;
-    background-color: #ffffff;
+    width: 13vw;
+    height: 6vh;
     color: #ffffff;
     text-transform: uppercase;
+}
 
-    /* Add social icons here! */
+#fb {
+    background-image: url("../images/facebook.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#ig {
+    background-image: url("../images/instagram.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#ks {
+    background-image: url("../images/kickstarter.png");
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 #form {
@@ -210,14 +249,14 @@ footer {
 #button-enviar {
     margin-bottom: 3vh;
     background-color: #E6E6E6;
-    border: none;
+    border: 1px solid #BBBBBB;
     color: #000000;
     text-transform: uppercase;
 }
 
 /* Style placeholder */
 #form input::placeholder {
-    color: #000000;
+    color: #3D3D3D;
     font-size: 10pt;
 }
 
