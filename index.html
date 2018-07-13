@@ -66,19 +66,23 @@
     <!-- Footer with social networks and form to contact -->
     <footer>
         <div id="social-container">
-            <a class="social" href="">Facebook</a>
-            <a class="social" href="">Instagram</a>
-            <a class="social" href="">Kickstarter</a>
+
+            <!-- Add icon to social networks -->
+            <a class="social" href=""></a>
+            <a class="social" href=""></a>
+            <a class="social" href=""></a>
         </div>
 
+        <!-- Form to contact -->
         <form id="form" action="" method="POST">
-            Nome:
-            <input type="text" name="nome">
 
-            Email:
-            <input type="text">
+            <input  class="form-component" type="text" name="nome" placeholder=" Informe seu nome:">
 
-            <Textarea rows="5" cols="20"></Textarea>
+            <input class="form-component" type="text" placeholder=" Informe seu email para contato:">
+
+            <Textarea id="form-textArea"rows="5" cols="20"></Textarea>
+
+            <input  id="button-enviar" class="form-component" type="submit" value="Enviar">
         </form>
     </footer>
 </body>
